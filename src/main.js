@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.scss';
+import { scroller } from 'react-scroll'
 
 
 
@@ -12,15 +13,41 @@ function Particle() { // Generate Particle Func
 
 class Main extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.myRef = React.createRef();
+      }
+
+    componentDidMount() {
+        
+
+    }
+
+    scrollTo(clsname) {
+        scroller.scrollTo(clsname, {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+          })    
+    }
+
+    Mouseover = () => {
+
+
+    }
+
     render() {
+        
+        
         const particles = [] 
         for(let i = 0 ; i<100; i++) {
             particles.push(i)
         }
-
+// <div  styles={{ backgroundImage:`url(${car})` }}>
         return(
-            <section>
-                <div className = "main_div">
+ 
+            <header>
+                <div className = "main_div" >                    
                 <div className = "title_container">
                     <div className = "focus-in-expand">
                         <h3 className= "main_subtitle">{this.props.subtitle}</h3>
@@ -30,7 +57,7 @@ class Main extends React.Component {
 
                     <div className="scroll_container">
                     <div className = "shake-bottom">
-                        <div className="scroll_btn_div">
+                        <div className="scroll_btn_div" onClick={() => this.scrollTo('myinfo_container')} >
                         <div className="scroll_btn_text"></div>
                         </div>
                     </div>
@@ -38,7 +65,7 @@ class Main extends React.Component {
                     </div>
                {particles.map(particle => (<Particle key={particle} /> )) }
                
-            </section>
+            </header>
             
         );
 
