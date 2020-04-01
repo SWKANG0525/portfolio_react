@@ -154,7 +154,7 @@
       width: $circleSize + px;
       height: $circleSize + px;
 
-      $startPositionY: random(10) + 100;
+      $startPositionY:  0;
       $framesName: "move-frames-" + $i;
       $moveDuration: 28000 + random(9000) + ms;
 
@@ -170,11 +170,11 @@
             0
           );
         }
-
+//  random(30) -200vh fix there
         to {
           transform: translate3d(
-            #{random(100) + vw},
-            #{- $startPositionY - random(30) + vh},
+            #{random(100) + vw}, 
+            #{- $startPositionY - random(30) -300vh},  
             0
           );
         }
