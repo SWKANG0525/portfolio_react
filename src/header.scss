@@ -1,0 +1,35 @@
+.navi_container {
+    background:rgba(00,00,00,0.8);
+    width:100%;
+    position:fixed;
+    height:5vh;
+    text-align: center;
+
+    
+}
+
+.navi_bar {
+    display:inline; 	
+    list-style: none;
+    white-space:nowrap; 
+    background:yellow;
+
+
+}
+
+
+
+.navi_li {
+    
+    opacity: 0.6;
+    color:white;
+    display:inline; 	
+    text-decoration: none;
+    outline: none;
+    padding:0 2%; 
+
+}
+
+.navi_li:hover {
+    opacity: 1;
+}

@@ -55,7 +55,7 @@ class Main extends React.Component {
                     </div>
                     </div>
 
-                    <div className="scroll_container">
+                    <div className="scroll_container">  
                     <div className = "shake-bottom">
                         <div className="scroll_btn_div" onClick={() => this.scrollTo('myinfo_container')} >
                         <div className="scroll_btn_text"></div>

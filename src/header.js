@@ -1,16 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import './header.scss'
+import { scroller } from 'react-scroll'
 
 class Header extends React.Component {
+
+    scrollTo(clsname) {
+        scroller.scrollTo(clsname, {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+          })    
+    }
 
 
 render() {
     return (
-        <header>
+
             <nav>
+                <div className="navi_container">
+                        <ul ClassName="navi_bar">
+                            <li className="navi_li" onClick={() => this.scrollTo('main_div')}>Home </li>
+                            <li className="navi_li" onClick={() => this.scrollTo('myinfo_container')}>Info</li>
+                            <li className="navi_li" onClick={() => this.scrollTo('')}>Skills</li>
+                            <li className="navi_li" onClick={() => this.scrollTo('')}>Timeline</li>
+                            <li className="navi_li" onClick={() => this.scrollTo('')}>Project</li>
+
+
+
+                        </ul>
+                </div>
             </nav>
-        </header>
-    )
+
+    );
 
    
 }
