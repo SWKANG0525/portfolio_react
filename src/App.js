@@ -3,6 +3,7 @@ import './App.css';
 import Main from './main';
 import Myinfo from './myinfo'
 import Header from './header'
+import Skills from './Skills'
 
 
 
@@ -11,8 +12,7 @@ class App extends React.Component {
 
   state = {
 
-    isLoading : true
-
+    isLoading : true,
   };
 
   
@@ -31,8 +31,9 @@ class App extends React.Component {
       <div>
       <div className="wrapper">
       <Header />
-      <Main title="강_호동;" subtitle="Hello World ! Welcome to My Portfolio"/>
+      <Main title="강_호동;" subtitle="Hello World! Welcome to My Portfolio"/>
       <Myinfo />
+      <Skills />
       </div>
       </div>
     );

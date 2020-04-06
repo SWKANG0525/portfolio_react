@@ -18,10 +18,10 @@ render() {
 
             <nav>
                 <div className="navi_container">
-                        <ul ClassName="navi_bar">
+                        <ul className="navi_bar">
                             <li className="navi_li" onClick={() => this.scrollTo('main_div')}>Home </li>
                             <li className="navi_li" onClick={() => this.scrollTo('myinfo_container')}>Info</li>
-                            <li className="navi_li" onClick={() => this.scrollTo('')}>Skills</li>
+                            <li className="navi_li" onClick={() => this.scrollTo('skills_container')}>Skills</li>
                             <li className="navi_li" onClick={() => this.scrollTo('')}>Timeline</li>
                             <li className="navi_li" onClick={() => this.scrollTo('')}>Project</li>
 

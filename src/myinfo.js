@@ -1,20 +1,19 @@
 import React from 'react';
 import './Myinfo.scss';
-import myinfo_character from './myinfo_character.png'; 
 
 
 class Myinfo extends React.Component {
 
 
 
-
+      
     render() {
         return(
         <section>
 
-            <div className="myinfo_container">
+            <div className="page_container myinfo_container" >
                 <div className="myinfo_left_container">
-                    <div className="rect_btn_div"  > 
+                    <div className="rect_btn_div jello-horizontal"  > 
                         <h3 className="title_name">My Info</h3>
                     </div>
                     {/* <img className="myinfo_character"src={myinfo_character} width ="150px"height="250px"alt="no img" /> */}

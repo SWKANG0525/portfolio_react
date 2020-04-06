@@ -16,24 +16,15 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.myRef = React.createRef();
+
       }
-
-    componentDidMount() {
-        
-
-    }
 
     scrollTo(clsname) {
         scroller.scrollTo(clsname, {
             duration: 800,
             delay: 0,
             smooth: 'easeInOutQuart'
-          })    
-    }
-
-    Mouseover = () => {
-
-
+          })
     }
 
     render() {
@@ -57,7 +48,7 @@ class Main extends React.Component {
 
                     <div className="scroll_container">  
                     <div className = "shake-bottom">
-                        <div className="scroll_btn_div" onClick={() => this.scrollTo('myinfo_container')} >
+                        <div className="scroll_btn_div" onClick={() => this.scrollTo('myinfo_container')  } >
                         <div className="scroll_btn_text"></div>
                         </div>
                     </div>
