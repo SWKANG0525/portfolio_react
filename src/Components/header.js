@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.scss'
+import '../css/header.scss'
 import { scroller } from 'react-scroll'
 
 class Header extends React.Component {

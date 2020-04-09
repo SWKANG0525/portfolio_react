@@ -1,5 +1,5 @@
 import React from 'react';
-import './Myinfo.scss';
+import '../css/Myinfo.scss';
 
 
 class Myinfo extends React.Component {
@@ -10,14 +10,13 @@ class Myinfo extends React.Component {
     render() {
         return(
         <section>
-
             <div className="page_container myinfo_container" >
                 <div className="myinfo_left_container">
                     <div className="rect_btn_div jello-horizontal"  > 
                         <h3 className="title_name">My Info</h3>
                     </div>
                     {/* <img className="myinfo_character"src={myinfo_character} width ="150px"height="250px"alt="no img" /> */}
-                    </div>
+                </div>
                 <div className="myinfo_right_container">
                     <article>
                         <div className="myinfo_article_container">
@@ -30,10 +29,10 @@ class Myinfo extends React.Component {
                                 누구보다 뛰어난 코딩실력을 갖추고 싶지도, 난해한 알고리즘을 작성해 명망있는 개발자가 되는것이 꿈은 아닙니다. 세상에 도움이 되는 서비스를
                                 만들어, 사람들에게 사랑받는 개발자가 되고싶습니다. 저는 '제가 만든 프로그램입니다' 라고 자신있게 말할 수 있는 사람이 될 수 있도록
                                 꾸준히 노력하겠습니다.
-                                </p>     
-                            </div>
+                            </p>     
+                        </div>
                     </article>
-                    </div>
+                </div>
             </div>  
         </section>
         );

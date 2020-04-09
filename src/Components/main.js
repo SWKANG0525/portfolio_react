@@ -1,5 +1,5 @@
 import React from 'react';
-import './Main.scss';
+import '../css/Main.scss';
 import { scroller } from 'react-scroll'
 
 
@@ -39,21 +39,21 @@ class Main extends React.Component {
  
             <header>
                 <div className = "main_div" >                    
-                <div className = "title_container">
-                    <div className = "focus-in-expand">
-                        <h3 className= "main_subtitle">{this.props.subtitle}</h3>
-                        <h1 className= "main_title">{this.props.title}</h1>
-                    </div>
+                    <div className = "title_container">
+                        <div className = "focus-in-expand">
+                            <h3 className= "main_subtitle">{this.props.subtitle}</h3>
+                            <h1 className= "main_title">{this.props.title}</h1>
+                        </div>
                     </div>
 
                     <div className="scroll_container">  
-                    <div className = "shake-bottom">
-                        <div className="scroll_btn_div" onClick={() => this.scrollTo('myinfo_container')  } >
-                        <div className="scroll_btn_text"></div>
+                        <div className = "shake-bottom">
+                            <div className="scroll_btn_div" onClick={() => this.scrollTo('myinfo_container')  } >
+                                <div className="scroll_btn_text"></div>
+                        </div>
                         </div>
                     </div>
-                    </div>
-                    </div>
+                </div>
                {particles.map(particle => (<Particle key={particle} /> )) }
                
             </header>
